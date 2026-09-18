@@ -28,6 +28,7 @@
             overflow-x: hidden;
         }
 
+        /* Navbar */
         nav {
             display: flex;
             justify-content: space-between;
@@ -95,6 +96,7 @@
             box-shadow: 0 6px 20px rgba(251, 191, 36, 0.4);
         }
 
+        /* Hero Section */
         .hero {
             display: flex;
             align-items: center;
@@ -158,6 +160,7 @@
             50% { transform: translateY(-15px); }
         }
 
+        /* Contract Address Section */
         .ca-container {
             padding: 0 8% 60px 8%;
             display: flex;
@@ -211,6 +214,7 @@
             color: #000;
         }
 
+        /* Social Buttons */
         .social-links {
             display: flex;
             gap: 15px;
@@ -237,6 +241,7 @@
             border-color: #fff;
         }
 
+        /* Features Section */
         .features {
             padding: 80px 8%;
             background: rgba(0, 0, 0, 0.2);
@@ -285,6 +290,7 @@
             opacity: 0.85;
         }
 
+        /* Tokenomics */
         .tokenomics {
             padding: 80px 8%;
             text-align: center;
@@ -319,6 +325,7 @@
             opacity: 0.8;
         }
 
+        /* Footer */
         footer {
             text-align: center;
             padding: 30px;
@@ -328,6 +335,7 @@
             opacity: 0.8;
         }
 
+        /* Responsive */
         @media (max-width: 900px) {
             .hero {
                 flex-direction: column;
@@ -349,6 +357,7 @@
 </head>
 <body>
 
+    <!-- Navbar -->
     <nav>
         <div class="logo-container">
             <img src="1789727506912_edit_137782161109968.png" alt="Jetex Logo" class="logo-img" onerror="this.style.display='none'">
@@ -359,9 +368,10 @@
             <li><a href="#features">Features</a></li>
             <li><a href="#tokenomics">Tokenomics</a></li>
         </ul>
-        <a href="https://pump.fun" target="_blank" class="btn-primary">Buy Now</a>
+        <a href="https://pump.fun/coin/Fsu6SnECgc1Wq2G4KfXjB9xaN6HPwkuEdnMK1Gzkpump" target="_blank" class="btn-primary">Buy Now</a>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero" id="about">
         <div class="hero-content">
             <span class="badge">🔥 Next-Gen Solana Asset</span>
@@ -369,9 +379,12 @@
             <p class="hero-desc">JETEX COIN combines high-tier security, lightning-fast transactions, and a premium aesthetic built for the elite crypto community.</p>
             
             <div class="social-links">
-                <a href="https://t.me/your_telegram" target="_blank" class="btn-social">✈️ Telegram</a>
+                <!-- Telegram Link -->
+                <a href="https://t.me/jetexcoin" target="_blank" class="btn-social">✈️ Telegram</a>
+                <!-- Twitter (X) Link -->
                 <a href="https://x.com/jetex_coin" target="_blank" class="btn-social">🐦 Twitter (X)</a>
-                <a href="https://pump.fun" target="_blank" class="btn-social">🚀 Pump.fun</a>
+                <!-- Pump.fun Link -->
+                <a href="https://pump.fun/coin/Fsu6SnECgc1Wq2G4KfXjB9xaN6HPwkuEdnMK1Gzkpump" target="_blank" class="btn-social">🚀 Pump.fun</a>
             </div>
         </div>
         <div class="hero-image">
@@ -379,14 +392,16 @@
         </div>
     </section>
 
+    <!-- Contract Address Section -->
     <div class="ca-container">
         <div class="ca-box">
             <span class="ca-title">Contract Address:</span>
-            <span class="ca-address" id="caText">YOUR_SOLANA_CONTRACT_ADDRESS_HERE</span>
+            <span class="ca-address" id="caText">Fsu6SnECgc1Wq2G4KfXjB9xaN6HPwkuEdnMK1Gzkpump</span>
             <button class="btn-copy" onclick="copyCA()">Copy CA</button>
         </div>
     </div>
 
+    <!-- Features Section -->
     <section class="features" id="features">
         <h2 class="section-title">Why Choose JETEX?</h2>
         <div class="grid">
@@ -408,6 +423,7 @@
         </div>
     </section>
 
+    <!-- Tokenomics -->
     <section class="tokenomics" id="tokenomics">
         <h2 class="section-title">Tokenomics</h2>
         <div class="token-stats">
@@ -426,6 +442,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 JETEX COIN. All rights reserved.</p>
     </footer>
